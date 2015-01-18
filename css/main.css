@@ -39,9 +39,7 @@ video {
     vertical-align: middle;
 }
 
-.lazy{
-    display:none;
-}
+
 fieldset {
     border: 0;
     margin: 0;
@@ -95,6 +93,13 @@ body {
     color: white;
 }
 
+
+article .item div img { 
+    width:600px;
+    height:400px;
+    position:relative;
+ 
+    }
 /* ==============
     MOBILE: Menu
    ============== */
