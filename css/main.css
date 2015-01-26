@@ -95,8 +95,9 @@ body {
 
 
 article .item div img { 
-    width:600px;
-    height:400px;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
     position:relative;
  
     }
@@ -169,9 +170,14 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 section.item{
-    margin: 5em 2em;
+    margin: 3em 0;
 }
 
+@media only screen and (min-width: 480px) {
+    section.item{
+        margin: 5em 1em;
+    }
+}
 
 
 
@@ -485,17 +491,51 @@ z-index:9999;
     -o-transition: all 0.2s ease-in;
     -transition: all 0.2s ease-in;
 }
-.mb_menu a:hover{
+.mb_menu a:hover, #header-mobile .mb_menu a:hover{
     color:#000;
     background-color:#fff;
 }
 
-.mb_menu a.active{
+.mb_menu a.active, #header-mobile .mb_menu a.active{
     color:#000;
     background-color:#fff;
 }
 
-.mb_footer{
+.header-container{
+    display:none;
+}
+
+@media only screen and (min-width: 860px) {
+    .header-container{
+        display:block;
+    }
+}
+
+#header-mobile{
+    display:block;
+}
+#header-mobile .mb_menu{
+    top:0px;
+    width:100%;
+    margin:0 auto;
+    }
+#header-mobile .mb_menu a{
+    display:inline-block;
+    width: 22.5%;
+    float: left;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    }
+#header-mobile .mb_menu a.ar{
+    width:10%;
+}
+@media only screen and (min-width: 860px) {
+    #header-mobile{
+        display:none;
+    }
+}
+/*.mb_footer{
     position:fixed;
     bottom:0px;
     left:0px;
@@ -523,7 +563,7 @@ z-index:9999;
 }
 .mb_footer a.mb_left{
     float:left;
-}
+}*/
 
 .container-small {width:50%;min-width:300px;left:15%;top:15px;background-color:#fff;position:relative;height:auto;
 }
@@ -674,8 +714,20 @@ img.alignright {
     margin:5px 0px 5px 11px;
 }
 
-.colonneleft {float:left;width:20%;margin-left:5%;}
-.colonneright {float:left;width:57%;padding-right:10%;padding-left:5%;}
+.colonneleft {width:100%;}
+@media only screen and (min-width: 480px) {
+    .colonneleft {
+     float:left;width:20%;margin-left:5%;
+    }
+
+    }
+.colonneright {width:100%;}
+@media only screen and (min-width: 480px) {
+    .colonneright {
+        float:left;width:57%;padding-right:10%;padding-left:5%;
+    }
+
+    }
 
 
 .clickme a{
@@ -776,10 +828,15 @@ outline:none;
     background-color:#fff;
 }
 .block-cart{
-float: right;
-margin:1%;
+float:right;
+margin: 60px 1% 1% 1%;
 }
 
+@media only screen and (min-width: 860px) {
+    .block-cart{
+        margin:1%;
+    }
+}
 .checkout-truc {
 float:left;
 left:30%;
