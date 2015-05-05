@@ -20,7 +20,7 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script type="text/javascript" src="js/vendor/jquery.lazy.min.js"></script>
-        <script type="text/javascript" src="js/vendor/simpleCart.js"></script>
+            <script type="text/javascript" src="js/vendor/simpleCart.js"></script>
     </head>
     <body>
       
@@ -665,19 +665,16 @@
 
        
   
-<script>
-
-  $(".mb_menu a").click(function() {
-
-    $(".mb_menu a").removeClass("active");
-
-    $(this).addClass("active");
-
+         <script>
+    
+// javascript code
+jQuery(document).ready(function() {
+    jQuery("img.lazy").lazy({
+        effect: "fadeIn",
+        effectTime: 500
+    });
 });
-
-</script>
-
-
+        </script>
 
 
 <script type="text/javascript">
