@@ -17,8 +17,8 @@
     // defaults
     var defaults = {
         ratio: 16/9, // usually either 4/3 or 16/9 -- tweak as needed
-        videoId: 'DPwPzhLwk_8', // toy robot in space is a good default, no?
-        mute: false,
+        videoId: 'ZCAnLxRvNNc', // toy robot in space is a good default, no?
+        mute: true,
         repeat: true,
         width: $(window).width(),
         wrapperZIndex: 99,
@@ -54,8 +54,8 @@
                 height: Math.ceil(options.width / options.ratio),
                 videoId: options.videoId,
                 playerVars: {
-                    controls: 1,
-                    showinfo: 1,
+                    controls: 0,
+                    showinfo: 0,
                     modestbranding: 1,
                     wmode: 'transparent'
                 },
