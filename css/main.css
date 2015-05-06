@@ -477,12 +477,13 @@ z-index:9999;
     background-color:#000;
     margin-bottom:2px;
         padding:0;
+        font-size: .8em;
     opacity:0.9;
     display:block;
-    width:98px;
-    height:98px;
+    width:70px;
+    height:70px;
     color:#fff;
-    line-height:98px;
+    line-height:70px;
     text-align:center;
     text-transform:uppercase;
     outline:none;
@@ -805,11 +806,11 @@ background-color:#000;
 margin-bottom:2px;
 padding:0;
 display:block;
-width:98px;
+width:70px;
 height:25px;
 color:#fff;
 line-height:25px;
-font-size:14px;
+font-size:10px;
 text-align:center;
 outline:none;
 -webkit-transition: all 0.2s ease-in;
@@ -836,7 +837,6 @@ margin: 60px 1% 1% 1%;
 
 @media only screen and (min-width: 960px) {
     .block-cart{
-        position:fixed;
         margin:1%;
     }
 }
