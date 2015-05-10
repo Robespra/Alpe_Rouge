@@ -694,6 +694,10 @@ font-weight:normal;
 letter-spacing:0px;
 color:#000;
   margin-left: 2%;
+    margin-top: 20%;
+}
+h3.first {
+    margin-top:0;
 }
 
 img.alignleft {
