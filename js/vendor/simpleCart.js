@@ -87,7 +87,7 @@
 
 				// default options
 				settings = {
-					checkout				: { type: "PayPal", email: "charly1337@hotmail.com" },
+					checkout				: { type: "PayPal", email: "rpages07@gmail.com" },
 					currency				: "EUR",
 					language				: "english-us",
 
